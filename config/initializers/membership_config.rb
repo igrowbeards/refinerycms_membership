@@ -9,6 +9,3 @@ module Provinces
     NE NH NJ NM NV NY OH OK OR PA PR PW RI SC SD TN TX
     UT VI VT VA WA WI WV WY)
 end
-
-ADMIN_EMAIL = ''
-
