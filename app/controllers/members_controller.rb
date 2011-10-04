@@ -3,7 +3,7 @@ class MembersController < ApplicationController
   crudify :member
   
   # Protect these actions behind member login - do we need to check out not signing up when signed in?
-  before_filter :redirect?, :except => [:new, :create]
+  #before_filter :redirect?, :except => [:new, :create]
 
   # GET /member/:id
   def show
