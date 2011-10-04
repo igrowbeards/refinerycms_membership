@@ -10,7 +10,7 @@ en:
     memberships:
       index:
         title: Memberships
-        create_new: Add New Membership
+        create_new: Add New Member
         reorder: Reorder Memberships
         reorder_done: Done Reordering Memberships
         sorry_no_results: Sorry! There are no results found.

@@ -2,6 +2,13 @@
   stylesheet_link_tag ['membership', 'demo_table', 'demo_page']
 end%>
 <div id="membership-wrapper" style="display:none">
+<section id="actions">
+<ul>
+	<li>
+	<%= link_to t('.create_new'), new_member_path, :class => "add_icon" %>
+	</li>
+</ul>
+</section>
   <div id="tabs">
     <ul class="clearfix">
       <li><a href="#user_roles"><span>Members</span></a></li>
@@ -21,6 +28,7 @@ end%>
     </div>
   </div>
 </div>
+
 
 <%content_for :javascripts do
   javascript_include_tag ['jquery.dataTables.min.js', 'membership.jquery.js']
