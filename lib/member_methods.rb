@@ -4,10 +4,6 @@
 # Place 'include MemberMethods'
 
 module MemberMethods
-	def url_format(theString)
-		theString.downcase.gsub(/ /, "-")
-	end
-
 	# Get the id of the current page
 	def current_page_id
 		url = request.fullpath
