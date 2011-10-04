@@ -10,11 +10,13 @@ module MemberMethods
 
 	# Get the id of the current page
 	def current_page_id
-		url = request.fullpath[1..-1]
+		url = request.fullpath
+		action = ActionController::Routing::Routes.recognize_path(url)
 		id = false
 		Page.all.each do |page|
-		  if url_format(page.title) == url
+		  if page.slug["name"] == action
 			id = page.id
+			break
 		  end
 		end
 		return id
